@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Job Search</title>
+    <link rel="stylesheet" href="css1/job.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css1/bootstrap.min.css">  
+</head>
+<body>
+
+        
+<div class="top-nav-bar">
+    <div class="search-box">
+        <i class="fa fa-bars" id="menu-btn" onclick="openmenu()"></i>
+        <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
+    <a href="#"><img src="img/joblogo1.png" alt="logo" class="logo"></a>
+    <input type="search" id="form-control" class="form-control" placeholder="Search" name="q">
+    <span class="input-group-text"><i class="fa fa-search"></i></span>
+    </div>
+    <div class="menu-bar">
+    <ul>
+    <li><a href="#" title="Add Job"><i class="fa fa-plus"></i> Add</a></li>
+   <!--<li><a href="signup.html">Sign Up</a></li>-->
+    <li><a href="login.html" title="Login&Register">Log In </a></li> <!----<i class="fas fa-user-circle"></i>-->
+    </ul>
+    </div>
+    </div>
+   
+
+<section class="addwork">
+<div class="container">
+   <div class="row">
+<div class="col-md-6">
+<ul class="nav nav-pills mb-3 pt-3" id="pills-tab" role="tablist">
+<li class="nav-item">
+<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">İş Elanı Yerleşdir</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">CV Yerleşdir</a>
+</li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+<form class=" form">
+        <div class="m-2 p-2">
+<div class="form-row">
+<div class="form-group col-md-12">
+<label for="inputState">Category</label>
+<select id="inputState" class="form-control">
+<option selected>Choose...</option>
+<option>İt</option>
+<option>Malliyye</option>
+<option>Teachers</option>
+<option>Doctor</option>
+<option>Malliyye</option>
+<option>Teachers</option>
+<option>Education</option>
+<option>Malliyye</option>
+<option>Teachers</option>
+</select>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-md-12">
+<label for="inputEmail4">Vezife</label>
+<input type="email" class="form-control" id="inputEmail4" placeholder="Vezife">
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-md-12">
+<label for="inputState">Şeher</label>
+<select id="inputState" class="form-control">
+<option selected>Choose...</option>
+<option value="28">Ağcabədi</option>
+<option value="12">Ağdam</option>
+<option value="83">Ağdaş</option>
+<option value="85">Ağstafa</option>
+<option value="34">Ağsu</option>
+<option value="1">Bakı</option>
+<option value="73">Balakən</option>
+<option value="30">Beyləqan</option>
+<option value="31">Bərdə</option>
+<option value="26">Biləsuvar</option>
+<option value="72">Cəlilabad</option>
+<option value="84">Daşkəsən</option>
+<option value="7">Əli-Bayramlı</option>
+<option value="23">Füzuli </option>
+<option value="86">Gədəbəy</option>
+<option value="4">Gəncə</option>
+<option value="81">Goranboy</option>
+<option value="29">Göyçay</option>
+<option value="25">İmişli</option>
+<option value="3">İsmayıllı</option>
+<option value="27">Kürdəmir</option>
+<option value="82">Lerik</option>
+<option value="11">Lənkaran</option>
+<option value="16">Masallı</option>
+<option value="6">Mingəçevir</option>
+<option value="14">Naftalan</option>
+<option value="8">Naxçıvan</option>
+<option value="39">Qaradağ</option>
+<option value="38">Qax</option>
+<option value="15">Qazax</option>
+<option value="76">Qəbələ</option>
+<option value="18">Quba</option>
+<option value="19">Qusar</option>
+<option value="33">Saatlı</option>
+<option value="24">Sabirabad</option>
+<option value="80">Şabran</option>
+<option value="22">Salyan</option>
+<option value="21">Şamaxı</option>
+<option value="35">Samux</option>
+<option value="9">Şəki</option>
+<option value="13">Şəmkir</option>
+<option value="79">Şərur</option>
+<option value="78">Şirvan</option>
+<option value="74">Siyəzən</option>
+<option value="5">Sumqayıt</option>
+<option value="32">Tərtər</option>
+<option value="17">Tovuz</option>
+<option value="20">Xaçmaz</option>
+<option value="75">Xırdalan</option>
+<option value="37">Xızı</option>
+<option value="77">Yardımlı</option>
+<option value="10">Yevlax</option>
+<option value="2">Zaqatala</option>
+</select>
+</div>
+</div>
+<div class="form-row">
+<div class="form-group col-md-6">
+<label for="inputState">Tehsil</label>
+<select id="inputState" class="form-control">
+<option selected>Choose...</option>
+<option>Elmi derece</option>
+<option>Ali</option>
+<option>Orta Xüsusi</option>
+<option>Orta texniki</option>
+<option>Orta</option>
+<option>-</option>
+</select>
+</div>
+<div class="form-group col-md-6">
+<label for="inputState">İş Tecrübesi</label>
+<select id="inputState" class="form-control">
+<option selected>Choose...</option>
+<option>1 ilden aşağı</option>
+<option>1 ilden 3 ile qeder</option>
+<option>3 ilden 5 ile qeder</option>
+<option>5 ilden çox</option>
+</select>
+</div>
+</div>
+<div class="form-row">
+  <div class="form-group col-md-6">
+  <label for="inputState">Minumum Maaş</label>
+  <select id="inputState" class="form-control">
+  <option selected>Choose...</option>
+  <option>100</option>
+  <option>200</option>
+  <option>300</option>
+  <option>400</option>
+  <option>500</option>
+  <option>600</option>
+  </select>
+  </div>
+  <div class="form-group col-md-6">
+  <label for="inputState">Max Maaş</label>
+  <select id="inputState" class="form-control">
+  <option selected>Choose...</option>
+  <option>1000</option>
+  <option>1500</option>
+  <option>2000</option>
+  <option>2500</option>
+  </select>
+  </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+    <label for="inputState">Minumum Yaş</label>
+    <select id="inputState" class="form-control">
+    <option selected>Choose...</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    </select>
+    </div>
+    <div class="form-group col-md-6">
+    <label for="inputState">Max Yaş</label>
+    <select id="inputState" class="form-control">
+    <option selected>Choose...</option>
+    <option>50</option>
+    <option>51</option>
+    <option>52</option>
+    <option>53</option>
+    </select>
+    </div>
+    </div>
+<div class="form-group">
+<label for="exampleFormControlTextarea1">Namizede telebler</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+</div>
+<div class="form-group">
+<label for="exampleFormControlTextarea1">İş barade melumat</label>
+<textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+</div>
+<div class="form-group">
+<label for="inputAddress">Şirketin Adı</label>
+<input type="text" class="form-control" id="inputAddress" placeholder="Şirketinizin adını daxil edin">
+</div>
+<div class="form-group">
+<label for="inputAddress2">Elaqader şexs</label>
+<input type="text" class="form-control" id="inputAddress2" placeholder="Elaqader şexs">
+</div>
+<button type="submit" class="btn btn-primary">Elanı Yerleşdir</button>
+</div>
+</form>
+</div>
+<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+       <form class="form">
+            <div class="m-2 p-2">
+                <div class="form-row">
+                        <div class="form-group col-md-4">
+                        <label for="inputEmail4">Ad</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Adınız" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                        <label for="inputPassword4">Soyad</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Soyadınız" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                        <label for="inputPassword4">Ata adı</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Atanızın adı"required>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-6">
+                        <label for="inputState">Cins</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Kişi</option>
+                        <option>Qadın</option>
+                        </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="inputState">Yaş</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlFile1">Şekil</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        
+                        <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <label for="inputState">Tehsil</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Baku</option>
+                        <option>Naxçıvan</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Etraflı</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <label for="inputState">İş Tecrübesi</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>1 ilden aşağı</option>
+                        <option>1 ilden 3 ile qeder</option>
+                        <option>3 ilden 5 ile qeder</option>
+                        <option>5 ilden çox</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Etraflı<small> (İş tecrübesi)</small></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <label for="inputState">Kategoriya</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>İt</option>
+                        <option>Malliyye</option>
+                        <option>Teachers</option>
+                        <option>Doctor</option>
+                        <option>Malliyye</option>
+                        <option>Teachers</option>
+                        <option>Education</option>
+                        <option>Malliyye</option>
+                        <option>Teachers</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <label for="inputEmail4">Vezife</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <label for="inputState">Şeher</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Baku</option>
+                        <option>Naxçıvan</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="form-row">
+                        <div class="form-group col-md-12">
+                        <label for="inputState">Minumum emek haqqı (AZN)</label>
+                        <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                        <option>500</option>
+                        <option>600</option>
+                        <option>700</option>
+                        <option>800</option>
+                        <option>900</option>
+                        <option>1000</option>
+                        </select>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Bacarıqlar</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Elave Melumat</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                        <label for="exampleFormControlInput1">Telefon</label>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+994*******">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Elanı Yerleşdir</button>
+                    </div>
+              </form>
+</div>
+</div>
+</div>
+ 
+    
+<div class="col-md-6">
+        <ul class="nav nav-pills mb-3 pt-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Qaydalar</a>
+               </li>
+                
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                  <ol>
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <li>CV/rezümelərin yerləşdirilməsi pulsuzdur. Hər bir adam 30 gün müddətində yalnız bir rezüme yerləşdirə bilər.</li>
+                        <li>CV/rezümenin ən qısa müddətdə dərc olunması üçün formanın doldurulmasına dair bütün təlimatlara ciddi riayət olunmalıdır. Səliqəsiz doldurulmuş formalar redaktəyə məruz qalacaq və dərhal dərc olunmayacaq.</li>
+                        <li>Elanların baş (BÖYÜK) hərflərlə tərtib olunması, o cümlədən latın hərfləri ilə yazılması qadağandır. Elanın mətni bütünlüklə bir dildə olmalıdır.</li>
+                        <li>
+                          <p>Aşağıdakı tərkibli rezümelərin yerləşdirilməsi qadağandır:</p>
+                          <ul>
+                            <li>bilərəkdən həqiqətə uyğun olmayan şəxsi məlumat;</li>
+                            <li>ədəbsiz, təhqiredici sözlər və ifadələr;</li>
+                            <li>reklam xarakterli;</li>
+                            <li>xidmət təklifləri.</li>
+                          </ul>
+                        </li>
+                        <li>
+                          <p>CV/rezümedə şəkil varsa, aşağıdakı şərtlərə cavab verməlidir:</p>
+                          <ul>
+                            <li>şəkildə yalnız bir adam olmalıdır;</li>
+                            <li>namizədin üzü aydın görünməlidir;</li>
+                            <li>filtrlərsiz olmalıdır.</li>
+                          </ul>
+                        </li>
+                        <li>CV/rezüme yerləşdirilərkən, «Vəzifə» sütununda kateqoriyaya uyğun olan yalnız bir mövqe qeyd olunmalıdır.</li>
+                        <li>«Təhsil» sütununda namizədin bitirdiyi təhsil müəssisəsinin, yiyələndiyi ixtisasın adı və təhsil aldığı vaxt qeyd olunmalıdır.</li>
+                        <li>«İş təcrübəsi» sütununda namizədin iş yeri, vəzifəsi və çalışdığı müddət qeyd olunmalıdır.</li>
+                        <li>«Bacarıqlar» sütununda namizədin peşəkar bacarıqlarının, bildiyi dillərin, kompyuter proqramlarının və s. qeyd olunması tövsiyə olunur.</li>
+                        <li>«Özünüz haqqında» adlı sütunda namizədin şəxsi xüsusiyyətləri, hobbisi, maraqları və s. qeyd olunur.</li>
+                      </ol>
+    </div>
+</div>
+</div>
+
+</section>  
+<!----------Footer------------->
+<section class="footer">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-4">
+        <h1>Useful Links</h1>
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+        <p>Return Policy</p>
+        <p>Discount Coupons</p>
+        </div>
+        <div class="col-md-4">
+        <h1>Company</h1>
+        <p>About Us</p>
+        <p>Contact Us</p>
+        <p>Career</p>
+        <p>Affiliate</p>
+        </div>
+        
+        <div class="col-md-4 footer-image">
+        <h1>Follow Us On</h1>
+        <p><i class="fa fa-facebook-official"></i>Facebook</p>
+        <p><i class="fa fa-youtube-play"></i>Youtube</p>
+        <p><i class="fa fa-linkedin"></i>Linkedin</p>
+        <p><i class="fa fa-twitter"></i>Twitter</p>
+        </div>
+        
+        </div>
+        </div>
+        <hr>
+        <p class="copyright">Made with <i class="fa fa-heart-o"></i> by Ferid Eyvazov</p>
+        </div>
+        
+        </section>
+
+ 
+    <script>
+        function openmenu()
+        {
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu()
+        {
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+        </script>
+<script src="js1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="js1/bootstrap.min.js"></script> 
+</body>
+</html>
